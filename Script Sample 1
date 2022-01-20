@@ -14,24 +14,16 @@ SELECT
 	firstswtteks.G5C, G1B, G1C, G1F, secondswtteks.G4D, G5A, secondswtteks.G5B,
 	secondswtteks.G5C, G5D, G6A, G6B, G6C, secondswtteks.G6D, thirdswtteks.G6D, G7A,
 	G7B, G8A, G8B, G9A, G9B 
-
 FROM dailygrades
-
 LEFT JOIN firstswtgrades
-ON firstswtgrades.student_id = dailygrades.student_id
-
+	ON firstswtgrades.student_id = dailygrades.student_id
 LEFT JOIN secondswtgrades
-ON secondswtgrades.student_id = dailygrades.student_id
-
+	ON secondswtgrades.student_id = dailygrades.student_id
 LEFT JOIN thirdswtgrades
-ON thirdswtgrades.student_id = dailygrades.student_id
-
+	ON thirdswtgrades.student_id = dailygrades.student_id
 LEFT JOIN firstswtteks
-ON firstswtteks.student_id = dailygrades.student_id
-
+	ON firstswtteks.student_id = dailygrades.student_id
 LEFT JOIN secondswtteks
-ON secondswtteks.student_id = dailygrades.student_id
-
+	ON secondswtteks.student_id = dailygrades.student_id
 LEFT JOIN thirdswtteks
-ON thirdswtteks.student_id = dailygrades.student_id;
-
+	ON thirdswtteks.student_id = dailygrades.student_id;
