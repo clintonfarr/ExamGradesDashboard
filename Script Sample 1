@@ -10,10 +10,8 @@ SELECT
 	a_17, a_18, a_19, a_20, a_21, a_22, a_23, a_24, a_25, a_26, a_27, a_28, a_29, a_30,
 	a_31, a_32, a_33, a_34, a_35, a_36, a_37, a_38,
 --learning objective pass percent
-	G2A, G2B, G2C, G3A, G3B, G3C, G3D, G4A, G4B, firstswtteks.G4D, firstswtteks.G5B,
-	firstswtteks.G5C, G1B, G1C, G1F, secondswtteks.G4D, G5A, secondswtteks.G5B,
-	secondswtteks.G5C, G5D, G6A, G6B, G6C, secondswtteks.G6D, thirdswtteks.G6D, G7A,
-	G7B, G8A, G8B, G9A, G9B 
+	LO1, LO2, LO3, LO4, LO5, LO6, LO7, LO8, LO9, LO10, LO11, LO12, LO13, LO14, LO15, LO16, 
+	LO17, LO18, LO19, LO20, LO21, LO22, LO23, LO24, LO25, LO26, LO27, LO28, LO29, LO30, LO31
 FROM dailygrades
 LEFT JOIN firstswtgrades
 	ON firstswtgrades.student_id = dailygrades.student_id
