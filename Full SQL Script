@@ -48,7 +48,8 @@ SECTION 2: Join query for .csv export
 		a_35 numeric,
 		a_36 numeric,
 		a_37 numeric,
-		a_38 numeric);
+		a_38 numeric
+		);
 
 	--exam #1 scores
 	CREATE TABLE firstSWTgrades (
@@ -62,7 +63,8 @@ SECTION 2: Join query for .csv export
 		approaches_grade_level varchar(5),
 		meets_grade_level varchar(5),
 		masters_grade_level varchar(5),
-		date_taken DATE);
+		date_taken DATE
+		);
 
 	--exam #2 scores
 	CREATE TABLE secondSWTgrades (
@@ -76,7 +78,8 @@ SECTION 2: Join query for .csv export
 		approaches_grade_level varchar(5),
 		meets_grade_level varchar(5),
 		masters_grade_level varchar(5),
-		date_taken DATE);
+		date_taken DATE
+		);
 	
 	--exam #3 scores
 	CREATE TABLE thirdSWTgrades (
@@ -90,51 +93,55 @@ SECTION 2: Join query for .csv export
 		approaches_grade_level varchar(5),
 		meets_grade_level varchar(5),
 		masters_grade_level varchar(5),
-		date_taken DATE);
+		date_taken DATE
+		);
 	
 	
 	--exam #1 learning objective percent correct
 	CREATE TABLE firstSWTteks (
 		student_ID char(6),
-		G2A numeric,
-		G2B numeric,
-		G2C numeric,
-		G3A numeric,
-		G3B numeric,
-		G3C numeric,
-		G3D numeric,
-		G4A numeric,
-		G4B numeric,
-		G4D numeric,
-		G5B numeric,
-		G5C numeric);
+		LO1 numeric,
+		LO2 numeric,
+		LO3 numeric,
+		LO4 numeric,
+		LO5 numeric,
+		LO6 numeric,
+		LO7 numeric,
+		LO8 numeric,
+		LO9 numeric,
+		LO10 numeric,
+		LO11 numeric,
+		LO12 numeric
+		);
 	
 	--exam #2 learning objective percent correct
 	CREATE TABLE secondSWTteks (
 		student_ID char(6),
-		G1B numeric,
-		G1C numeric,
-		G1F numeric,
-		G4D numeric,
-		G5A numeric,
-		G5B numeric,
-		G5C numeric,
-		G5D numeric,
-		G6A numeric,
-		G6B numeric,
-		G6C numeric,
-		G6D numeric);
+		LO13 numeric,
+		LO14 numeric,
+		LO15 numeric,
+		LO16 numeric,
+		LO17 numeric,
+		LO18 numeric,
+		LO19 numeric,
+		LO20 numeric,
+		LO21 numeric,
+		LO22 numeric,
+		LO23 numeric,
+		LO24 numeric
+		);
 	
 	--exam #3 learning objective percent correct
 	CREATE TABLE thirdSWTteks (
 		student_ID char(6),
-		G6D numeric,
-		G7A numeric,
-		G7B numeric,
-		G8A numeric,
-		G8B numeric,
-		G9A numeric,
-		G9B numeric);	
+		LO25 numeric,
+		LO26 numeric,
+		LO27 numeric,
+		LO28 numeric,
+		LO29 numeric,
+		LO30 numeric,
+		LO31 numeric
+		);	
 
 --SECTION 2:  Join query for .csv export
 
@@ -155,11 +162,11 @@ SELECT
 	--daily assignments
 	a_1 ,
 	a_2 ,
-	a_3,
-	a_4,
+	a_3 ,
+	a_4 ,
 	a_5 ,
 	a_6 ,
-	a_7,
+	a_7 ,
 	a_8 ,
 	a_9 ,
 	a_10 ,
@@ -183,7 +190,7 @@ SELECT
 	a_28 ,
 	a_29 ,
 	a_30 ,
-	a_31,
+	a_31 ,
 	a_32 ,
 	a_33 ,
 	a_34 ,
@@ -193,37 +200,37 @@ SELECT
 	a_38 ,
 	
 	--learning objective pass percent
-	G2A ,
-	G2B ,
-	G2C ,
-	G3A,
-	G3B ,
-	G3C,
-	G3D ,
-	G4A ,
-	G4B ,
-	firstswtteks.G4D ,
-	firstswtteks.G5B ,
-	firstswtteks.G5C ,
-	G1B ,
-	G1C ,
-	G1F ,
-	secondswtteks.G4D ,
-	G5A ,
-	secondswtteks.G5B ,
-	secondswtteks.G5C ,
-	G5D,
-	G6A ,
-	G6B ,
-	G6C ,
-	secondswtteks.G6D ,
-	thirdswtteks.G6D ,
-	G7A ,
-	G7B ,
-	G8A ,
-	G8B ,
-	G9A ,
-	G9B 
+	LO1 ,
+	LO2 ,
+	LO3 ,
+	LO4 ,
+	LO5 ,
+	LO6 ,
+	LO7 ,
+	LO8 ,
+	LO9 ,
+	LO10 ,
+	LO11 ,
+	LO12 ,
+	LO13 ,
+	LO14 ,
+	LO15 ,
+	LO16 ,
+	LO17 ,
+	LO18 ,
+	LO19 ,
+	LO20 ,
+	LO21 ,
+	LO22 ,
+	LO23 ,
+	LO24 ,
+	LO25 ,
+	LO26 ,
+	LO27 ,
+	LO28 ,
+	LO29 ,
+	LO30 ,
+	LO31
 
 FROM dailygrades
 
